@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!-- Indica que el documento es HTML5 -->
+<html lang="es"> <!-- Inicio del documento HTML en español -->
+<head> <!-- Información para el navegador, no visible en pantalla -->
+  <meta charset="UTF-8"> <!-- Configura la codificación para caracteres especiales -->
+  <title>Mi Lista de Tareas</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Conecta el archivo de estilos CSS -->
+</head>
+<body> <!-- Cuerpo del sitio: todo lo visible en la página -->
+
+  <header> <!-- Sección del encabezado -->
+    <h1>Lista de Tareas</h1> <!-- Título principal de la página -->
+    <nav> <!-- Menú de navegación -->
+      <a href="index.html">Inicio</a> <!-- Enlace a la página principal -->
+      <a href="contacto.html">Contacto</a> <!-- Enlace a la página de contacto -->
+    </nav>
+  </header>
+
+  <main> <!-- Contenido principal del sitio -->
+    <input type="text" id="nuevaTarea" placeholder="Escribe una nueva tarea...">
+
+<!-- Selector de prioridad -->
+<select id="prioridadTarea">
+  <option value="alta">Alta 🔴</option>
+  <option value="media">Media 🟠</option>
+  <option value="baja">Baja 🟢</option>
+</select>
+
+<!-- Selector de color -->
+<input type="color" id="colorTarea" value="#f9cbcb">
+
+<!-- Botón para agregar -->
+<button onclick="agregarTarea()">Agregar</button>
+<p id="contadorTareas">Tareas pendientes: 0</p>
+    <ul id="listaTareas"></ul> <!-- Lista donde se mostrarán las tareas agregadas -->
+  </main>
+
+  <footer> <!-- Pie de página -->
+    <p>¡Organiza tu vida! - Pagina Web ListaDeTareas</p> <!-- Texto con derechos de autor -->
+  </footer>
+
+  <script src="script.js"></script> <!-- Carga el archivo JavaScript para interactividad -->
+</body>
+</html>
